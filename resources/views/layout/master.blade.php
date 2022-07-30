@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class=" sticky-top shadow p-3 mb-5 bg-body rounded navbar navbar-expand-lg " style="background-color: #2fafe5;">
+    <nav class=" sticky-top shadow p-3 bg-body navbar navbar-expand-lg " style="background-color: #2fafe5;">
   <div class="container-fluid px-lg-5">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,8 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2 border border-primary" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-primary" type="submit" style="" >Search</button>
+        <input class="form-control me-2 border border-primary rounded-3" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary rounded-3" type="submit" style="" >Search</button>
       </form>
       <!-- <button type="button" class=" mx-2 btn btn-primary">Login</button> -->
       <div class="btn-group mx-2" role="group" aria-label="Basic radio toggle button group">
@@ -59,8 +59,10 @@
 @yield('content')
 
     <!-- footer -->
-    <div class="d-flex p-4 justify-content-around bg-dark text-light" style="--bs-bg-opacity: 0.9">
-            <div class="mx-2">
+    <!-- class="row row-cols-md-1 row-cols-lg-2" -->
+    <div class="p-4 justify-content-around bg-dark text-light" style="--bs-bg-opacity: 0.9">
+        <div class=" row row-cols-sm-3 row row-cols-md-4 row-cols-lg-6 justify-content-around">
+        <div class="mx-2">
                 <h3>Overview</h3><br>
                 <p class="text-decoration-none"><a class="text-decoration-none text-light" href="{{ url('/home') }}">Home</a></p>
                 <p><a class="text-decoration-none text-light" href="{{ url('/about') }}">About Us</a></p>
@@ -86,14 +88,16 @@
             </div>
             <div class="mx-2">
                 <h3>Follow us</h3><br>
-                <a class="text-decoration-none text-light" href=""><i class="mx-2 fa-brands fa-twitter" style="font-size:larger;" ></i></a>
+                <a class="text-decoration-none text-light" href=""><i class="fa-brands fa-tiktok" style="font-size:larger;"></i></a>
                 <a class="text-decoration-none text-light" href=""><i class="mx-2 fa-brands fa-facebook-f" style="font-size:larger;"></i></a>
                 <a class="text-decoration-none text-light" href=""><i class="mx-2 fa-brands fa-instagram" style="font-size:larger;"></i></a>
                 <a class="text-decoration-none text-light" href=""><i class="mx-2 fa-brands fa-youtube" style="font-size:larger;"></i></a>
             </div>
+        </div>
+
     </div>
     <div class="bg-primary d-flex justify-content-center p-2 text-light">
-      <div class="rights-reserved mt-2">
+        <div class="rights-reserved mt-2">
                 <p>&copy;2022 Term5 Web Application Project. All rights reserved.</p>
         </div>
     </div>
