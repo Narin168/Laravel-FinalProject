@@ -14,16 +14,10 @@
                     <li class="nav-item mx-3">
                         <a class="navbar-brand" href="{{ url('/about') }}">About</a>
                     </li>
-                    <li class="nav-item dropdown mx-3">
-                    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action </a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
+
+                    <!-- Category -->
+                    @include('layout.category')
+
                     <li class="nav-item mx-3">
                     <!-- <a class="navbar-brand" href="{{ url('/history') }}">History</a> -->
                     </li>

@@ -10,7 +10,7 @@
     <div>
             <div class="position-relative w-50 p-5 text-center my-5 mx-auto mb-5 px-6 shadow rounded-5 bg-primary text-white" style="--bs-bg-opacity: 0.6">
                     <h2>Welcome to Home Service</h2>
-                    <p class="fs-5 ">Life is much easier</p>
+                    <p class="fs-5 ">Life is much easier with us</p>
             </div>
             <div class="position-relative p-5 mt-md-5">
                 <div class="d-flex">

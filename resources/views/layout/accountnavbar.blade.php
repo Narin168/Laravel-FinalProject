@@ -1,4 +1,4 @@
-<nav class=" sticky-top shadow py-3  bg-body navbar navbar-expand-lg " style="background-color: #2fafe5; padding-right:20px;">
+<nav class=" sticky-top shadow py-3  bg-body navbar navbar-expand-lg " style="background-color: #2fafe5; padding-right:52px;">
         <div class="container-fluid" style="padding-right:20px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -14,16 +14,10 @@
                     <li class="nav-item mx-3">
                     <a class="navbar-brand" href="{{ url('/about') }}">About</a>
                     </li>
-                    <li class="nav-item dropdown mx-3">
-                    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action </a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
+
+                    <!-- Category -->
+                    @include('layout.category')
+
                     <li class="nav-item mx-3">
                     <a class="navbar-brand" href="{{ url('/history') }}">History</a>
                     </li>
