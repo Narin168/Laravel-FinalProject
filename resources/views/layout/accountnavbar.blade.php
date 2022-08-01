@@ -27,7 +27,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 border border-primary rounded-3" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary rounded-3" type="submit" style="" >Search</button>
+                    <button class="btn btn-primary rounded-3" type="submit"  >Search</button>
                 </form>
                 <!-- <div class="btn-group mx-2">
                     <a href="" class="btn btn-outline-primary pe-none" >{{Auth::user()->name}}</a>
