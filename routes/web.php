@@ -25,6 +25,9 @@ Route::get('/about', function () {
 Route::get('/history', function () {
     return view('page.history');
 });
+Route::get('/admin', function () {
+    return view('admin.admin');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
