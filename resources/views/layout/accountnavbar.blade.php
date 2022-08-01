@@ -1,10 +1,13 @@
-<nav class=" sticky-top shadow p-3 bg-body navbar navbar-expand-lg " style="background-color: #2fafe5;">
-        <div class="container-fluid px-lg-5">
+<nav class=" sticky-top shadow py-3  bg-body navbar navbar-expand-lg " style="background-color: #2fafe5; padding-right:20px;">
+        <div class="container-fluid" style="padding-right:20px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                    <li>
+                        <img class="img-fluid" src="/images/doctorHome.jpg" alt="" style="width:80px; padding-right:20px;">
+                    </li>
                     <li class="nav-item mx-3">
                     <a class="navbar-brand" aria-current="page" href="{{ url('/home') }}">Home</a>
                     </li>
@@ -38,8 +41,12 @@
                         {{Auth::user()->name}}
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="">Log Out</a></li>
-                            @csrf
+                            <li>
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log Out</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                            </li>
                         </ul>
                     </div>
             </div>
