@@ -31,8 +31,23 @@ class CategorySeeder extends Seeder
                 'name' => 'Cleaning'
             ]
         );
-    
-    
+        DB::table('categories')->insert(
+            [
+                'name' => 'Painting'
+            ]
+        );
+        DB::table('categories')->insert(
+            [
+                'name' => 'Flooring'
+            ]
+        );
+        DB::table('categories')->insert(
+            [
+                'name' => 'Carpentry & Cabinets'
+            ]
+        );
+
+   
     
     }
 }
