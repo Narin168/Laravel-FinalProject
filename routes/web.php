@@ -31,6 +31,24 @@ Route::get('/admin', function () {
 Route::get('/all', function () {
     return view('category.all');
 });
+Route::get('/carpentry', function () {
+    return view('category.carpentry');
+});
+Route::get('/cleaning', function () {
+    return view('category.cleaning');
+});
+Route::get('/electrical', function () {
+    return view('category.electrical');
+});
+Route::get('/flooring', function () {
+    return view('category.flooring');
+});
+Route::get('/painting', function () {
+    return view('category.painting');
+});
+Route::get('/plumbing', function () {
+    return view('category.plumbing');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
