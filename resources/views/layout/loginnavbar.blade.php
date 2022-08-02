@@ -14,23 +14,17 @@
                     <li class="nav-item mx-3">
                         <a class="navbar-brand" href="{{ url('/about') }}">About</a>
                     </li>
-                    <li class="nav-item dropdown mx-3">
-                    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action </a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
+
+                    <!-- Category -->
+                    @include('layout.category')
+
                     <li class="nav-item mx-3">
                     <!-- <a class="navbar-brand" href="{{ url('/history') }}">History</a> -->
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 border border-primary rounded-3" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary rounded-3" type="submit" style="" >Search</button>
+                    <button class="btn btn-primary rounded-3" type="submit"  >Search</button>
                 </form>
             <!-- <button type="button" class=" mx-2 btn btn-primary">Login</button> -->
                 <div class="btn-group mx-2">
