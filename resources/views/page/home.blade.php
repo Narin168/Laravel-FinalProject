@@ -28,7 +28,7 @@
 .carousel-caption a {
 	text-transform: uppercase;
 	text-decoration: none;
-	background: #2EB0E5;
+	background: #7BA8FE;
 	padding: 5px 20px;
 	display: inline-block;
 	color: #fff;
@@ -61,107 +61,53 @@
 	
 }
 
-.container h1 {
-	font-size: 40px;
+
+.header {
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-	font-weight: bold;
-	color: #2EB0E5;
-}
-.container {
-	padding-top: 8%;
-}
-.single-team {
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 10px;
-	perspective: 1000px;
-	-webkit-perspective: 1000px;
-}
-.team-img {
-	width: 100%;
-	height: 250px;
-	padding: 20px;
-	text-align: center;
-	transition: all .5s ease;
-}
-.one {
-	background-image: url(img/1.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
-.two {
-	background-image: url(img/2.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
-.three {
-	background-image: url(img/3.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
-.team-text {
-	position: absolute;
-	width: 100%;
-	height: 250px;
-	padding: 20px;
-	text-align: center;
-	transition: all .5s ease;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	opacity: 0;
-	background-color: #363A3E;
-	background-color: ;
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
-	transform: translateX(110px) rotateY(-90deg);
-	color: #2EB0E5;
-}
-.team-text h2 {
+	font-size: 50px;
+	margin-bottom: 50px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
-.team-text h4 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 300;
+.header span {
+	color: #7BA8FE;
 }
-.team-text p {
-	line-height: 2;
+.single-service {
+	padding: 25px;
+	transition: all .5s ease;
 }
-.img-area {
-	position: relative;
-	left: 180px;
-	top: 0px;
-	transform: translateX(-50%);
+.single-service i {
+	font-size: 60px;
 }
-.single-team:hover .team-img {
-	opacity: 0;
-	transform: translateX(-110px) rotateY(90deg);
+.single-service h2 {
+	font-size: 25px;
+	font-weight: 500;
 }
-.single-team:hover .team-text {
-	opacity: 1;
-	transform: rotateY(0);
+.single-service p{
+	font-size: 18px;
 }
+.single-service:hover {
+	background: #7BA8FE;
+	color: #fff;
+}
+
 
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	margin-top: 20px;
 }
 
 .sec-heading h6 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 40px;
+	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	font-weight: bold;
-	color: #2EB0E5;
+	color: #7BA8FE;
 }
 .single-box {
 	border: 1px solid #ddd;
@@ -198,7 +144,7 @@ body {
 .info-area a {
 	display: inline-block;
 	margin: 25px 0 0;
-	background-color: #2EB0E5;
+	background-color: #7BA8FE;
 	color: #fff;
 	padding: 10px 35px;
 	border-radius: 4px;
@@ -207,7 +153,7 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -60px;
+	bottom: -40px;
 	text-align: center;
 	width: 100%;
 }
@@ -221,7 +167,7 @@ body {
 	background-color: #262626;
 }
 .team-slider .owl-dot.active {
-	background-color: #2EB0E5;
+	background-color: #7BA8FE;
 }
 .move-animation {
 	position: relative;
@@ -277,47 +223,31 @@ body {
 	</div>
 
 <div class="container">
-		<h1>Solution for your home</h1>
+		<h1 class="header">Our <span>Services</span></h1>
 		<div class="row">
-			<div class="col-md-4 col-sm-6">
-				<div class="single-team">
-					<div class="team-img one">
-						<div class="img-area"></div>
-					</div>
-					<div class="team-text">
-						<h2>Maintenance</h2>
-            <h4>Service</h4>
-						<p>One-time and recurring maintenance solutions make it easy to keep your home in tip-top shape.</p>
-					</div>
+			<div class="col s12 m6 l4">
+				<div class="single-service center-align">
+					<i class="lni lni-cart"></i>
+					<h2>Maintenance</h2>
+					<p>One-time and recurring maintenance solutions make it easy to keep your home in tip-top shape. From air filter replacement to winterization and everything in between, get peace of mind knowing all your home maintenance is handled by pros..</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-team">
-					<div class="team-img two">
-						<div class="img-area"></div>
-					</div>
-					<div class="team-text">
-						<h2>Repairs</h2>
-						<h4>Service</h4>
-						<p>On-call handyman services to take care of all your small projects and home repairs. – fast. Drywall, fans, light fixtures, and more.</p>
-					</div>
+			<div class="col s12 m6 l4">
+				<div class="single-service center-align">
+					<i class="lni lni-grow"></i>
+					<h2>Repair</h2>
+					<p>On-call handyman services to take care of all your small projects and home repairs – fast. Drywall, doors, ceiling fans, light fixtures, and so much more. Our skilled professionals provide dependable, hassle-free solutions for your home.</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="single-team">
-					<div class="team-img three">
-						<div class="img-area"></div>
-					</div>
-					<div class="team-text">
-						<h2>Update</h2>
-						<h4>Service</h4>
-						<p>Professional contractors ready to update or remodel any room in your home. From kitchens, bathrooms and basements to decks.</p>
-					</div>
+			<div class="col s12 m6 l4">
+				<div class="single-service center-align">
+					<i class="lni lni-handshake"></i>
+					<h2>Update</h2>
+					<p>Professional contractors ready to update or remodel any room in your home. From kitchens, bathrooms and basements to decks, driveways, and fences our top-rated pros will add value to your home improvement project without adding stress to your life.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
