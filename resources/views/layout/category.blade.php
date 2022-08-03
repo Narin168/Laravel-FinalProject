@@ -1,5 +1,5 @@
 <li class="nav-item dropdown mx-3">
-    <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="navbar-brand dropdown-toggle" href="{{ url('/all') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Category
     </a>
     <ul class="dropdown-menu">

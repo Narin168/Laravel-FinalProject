@@ -4,14 +4,12 @@
 
 @section('content')
 
-<img class="img-fluid w-100 position-absolute  rounded-1" style="height: 250px; object-fit: cover;" src="https://www.refineincorporated.com/wp-content/uploads/2017/11/home-repairs-.jpg" alt="home">
+<div class="text-white w-100" style="padding:100px; height: 270px; background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://eb-blogs.s3.us-east-2.amazonaws.com/ApexServicePartners.png); background-repeat: no-repeat; background-size: cover;" >
+    <h1 class="m-auto">Services</h1>
+</div>
 
-<div class="position-relative">
-    <div class="p-4 w-25 bg-primary text-center text-white rounded-4 " style="--bs-bg-opacity: 0.4; margin:70px">
-        <h1>Services</h1>
-    </div>
-
-    <div class="position-relative p-5 mt-md-5">
+<div>
+    <div class="p-5 mt-md-5">
         <div class="d-flex">
             <h1>All&nbsp;</h1>
             <h1 class="text-primary">Services</h1>
@@ -30,54 +28,54 @@
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3">
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-plug-circle-bolt fs-1"></i></a>
+                                    <a href="{{ url('/electrical') }}" class="text-decoration-none"><i class="fa-solid fa-plug-circle-bolt fs-1"></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Electrical</h5></a>
+                                        <a href="{{ url('/electrical') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Electrical</h5></a>
                                         <p>Qualified electricians at your service!</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-faucet-drip fs-1"></i></a>
+                                    <a href="{{ url('/plumbing') }}" class="text-decoration-none"><i class="fa-solid fa-faucet-drip fs-1"></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Plumbing</h5></a>
+                                        <a href="{{ url('/plumbing') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Plumbing</h5></a>
                                         <p>Quality plumbing services for your house.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-broom fs-1"></i></a>
+                                    <a href="{{ url('/cleaning') }}" class="text-decoration-none"><i class="fa-solid fa-broom fs-1"></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Cleaning</h5></a>
-                                        <p>Stay clean and healthy no worry about dust or bateria.</p>
+                                        <a href="{{ url('/cleaning') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Cleaning</h5></a>
+                                        <p>Stay clean and healthy no worry about dust or bacteria.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-paint-roller fs-1"></i></a>
+                                    <a href="{{ url('/painting') }}" class="text-decoration-none"><i class="fa-solid fa-paint-roller fs-1"></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Painting</h5></a>
+                                        <a href="{{ url('/painting') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Painting</h5></a>
                                         <p>Big job or small job - all painting is done by us on the same perfect quality level.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-ruler-combined fs-1"></i></a>
+                                    <a href="{{ url('/flooring') }}" class="text-decoration-none"><i class="fa-solid fa-ruler-combined fs-1"></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Flooring</h5></a>
+                                        <a href="{{ url('/flooring') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Flooring</h5></a>
                                         <p>Residential and Commercial Floor Installation Repair and Maintenance.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
-                                    <a href="" class="text-decoration-none"><i class="fa-solid fa-rug fs-1"></i></a>
+                                    <a href="{{ url('/carpentry') }}" class="text-decoration-none"><i class="fa-solid fa-hammer fs-1"></i></i></a>
                                     <div class="card-body">
-                                        <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Carpentry & Cabinets</h5></a>
+                                        <a href="{{ url('/carpentry') }}" class="text-decoration-none"><h5 class="card-title hover:text-primary">Carpentry & Cabinets</h5></a>
                                         <p>Qualified carpenters at your service!</p>
                                     </div>
                                 </div>
@@ -85,7 +83,7 @@
 
         </div>
     </div>
-    <div class="position-relative p-5 mt-md-5">
+    <div class="p-5 mt-md-5">
         <div class="d-flex">
             <h1>We do&nbsp;</h1>
             <h1 class="text-primary">it all</h1>
