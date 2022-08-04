@@ -9,17 +9,17 @@
                         <img class="img-fluid" src="/images/doctorHome.jpg" alt="" style="width:80px; padding-right:20px;">
                     </li>
                     <li class="nav-item mx-3">
-                    <a class="navbar-brand" aria-current="page" href="{{ url('/home') }}">Home</a>
+                        <a class="navbar-brand" aria-current="page" href="{{ url('/home') }}">Home</a>
                     </li>
                     <li class="nav-item mx-3">
-                    <a class="navbar-brand" href="{{ url('/about') }}">About</a>
+                        <a class="navbar-brand" href="{{ url('/about') }}">About</a>
                     </li>
 
                     <!-- Category -->
                     @include('layout.category')
 
                     <li class="nav-item mx-3">
-                    <a class="navbar-brand" href="{{ url('/history') }}">History</a>
+                        <a class="navbar-brand" href="{{ url('/history') }}">History</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -43,7 +43,11 @@
                             </li>
                         </ul>
                     </div>
-            </div>
+                </div>
+                    @if( strcmp(Auth::user()->status, "isAdmin")  === 0)
+                        <a href="{{ route('admin') }}" class=" mx-1 btn btn-sm btn-outline-primary">CRUD</a>
+                        <!-- <button class=" mx-1 btn btn-sm btn-outline-primary" type="button">CRUD</button> -->
+                    @endif
         </div>
     </div>
 </nav>

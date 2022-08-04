@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +50,7 @@ Route::get('/painting', function () {
 Route::get('/plumbing', function () {
     return view('category.plumbing');
 });
+Route::get('/admin', [adminController::class, 'index'])->middleware(['auth'])->name('admin');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
