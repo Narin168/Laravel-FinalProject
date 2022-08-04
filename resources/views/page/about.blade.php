@@ -132,7 +132,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Email Us</h5>
                                         <h5>&nbsp;</h5>
-                                        <h5>homeservice@gmail.com</h5>
+                                        <h5>doctorhome@gmail.com</h5>
                                     </div>
                                 </div>
                             </div>
