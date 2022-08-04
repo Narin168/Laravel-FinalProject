@@ -27,7 +27,7 @@
     <div class="d-flex p-4">
         <div class="p-4" style="width: 65%;">
             <h4>Professional Carpentry Service</h4>
-            <p>Doctor Home is dedicated to delivering the very best value in professional carpentry services. To do this, we provide high-quality craftsmanship at affordable prices and top it off with unparalleled customer service. Your satisfaction is important to us.</p>
+            <p>Dsign, Build and Install. Doctor Home is dedicated to delivering the very best value in professional carpentry services. To do this, we provide high-quality craftsmanship at affordable prices and top it off with unparalleled customer service. Your satisfaction is important to us.</p>
             <div class="container text-center">
                 <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 
