@@ -32,22 +32,7 @@
                 <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 
                 <!-- loop the card -->
-                    <div class="card shadow p-0 mx-4 my-2" style="width: 18rem;">
-                            <img src="https://media.istockphoto.com/photos/man-in-a-working-overall-picture-id1015387276?k=20&m=1015387276&s=612x612&w=0&h=Vf9r2_8HePzA-qPdeKGc4lqQvOHqQq6eIaE8iDdUaxU=" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">JKJ </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Book Now</a>
-                            </div>
-                    </div>
-                    <div class="card shadow p-0 mx-4 my-2" style="width: 18rem;">
-                            <img src="https://media.istockphoto.com/photos/man-in-a-working-overall-picture-id1015387276?k=20&m=1015387276&s=612x612&w=0&h=Vf9r2_8HePzA-qPdeKGc4lqQvOHqQq6eIaE8iDdUaxU=" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">JKJ </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Book Now</a>
-                            </div>
-                    </div>
+                @include('service.card')
                 </div>
                 <!-- end card -->
 

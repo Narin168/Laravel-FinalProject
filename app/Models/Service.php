@@ -9,6 +9,6 @@ class Service extends Model
 {
     use HasFactory;
     public function categories(){
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class,foreignKey:'category_id');
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,16 @@ Route::get('/painting', function () {
 Route::get('/plumbing', function () {
     return view('category.plumbing');
 });
+
+
+ 
+Route::get('/electrical', [ServiceController::class, 'electrical']);
+Route::get('/plumbing', [ServiceController::class, 'plumbing']);
+Route::get('/cleaning', [ServiceController::class, 'cleaning']);
+Route::get('/painting', [ServiceController::class, 'painting']);
+Route::get('/flooring', [ServiceController::class, 'flooring']);
+Route::get('/carpentry', [ServiceController::class, 'carpentry']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -12,7 +12,7 @@
             <a href="{{ url('/cleaning') }}" class=" text-black"><p>Cleaning</p></a>
             <a href="{{ url('/painting') }}" class=" text-black"><p>Painting</p></a>
             <a href="{{ url('/flooring') }}" class=" text-black"><p>Flooring</p></a>
-            <a href="{{ url('/carpentry') }}" class=" text-black"><p>Carpentry $ Carbinet</p></a>
+            <a href="{{ url('/carpentry') }}" class=" text-black"><p>Carpentry & Carbinet</p></a>
 
         </div>
     </div>
