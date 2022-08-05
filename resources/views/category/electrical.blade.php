@@ -32,12 +32,10 @@
                 <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 
                 <!-- loop the card -->
-                   
+
                     @include('service.card')
                 </div>
                 <!-- end card -->
-            
-
             </div>
         </div>
         @include('layout.sidenavbar')
