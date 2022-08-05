@@ -145,7 +145,7 @@ class ServiceSeeder extends Seeder
             [
                 'category_id' => 6 ,
                 'name' => 'Shelving & Bookcases',
-                'description' => 'If you are currently considering increasing the storage in your home with custom shelves or bookcases, you should not hesitate to contact your Doctor Home! Let our team do the heavy lifting on your behalf when it comes to adding more shelving and bookcases to your home.',
+                'description' => 'If you are currently considering increasing the storage in your home with custom shelves or bookcases, you should not hesitate to contact your Doctor Home! Let our team do the heavy lifting on your behalf.',
                 'imgurl' => 'https://cf.shopee.ph/file/4b58ba074b80f719f908c29e63d349ae'
             ]
         );
@@ -153,7 +153,7 @@ class ServiceSeeder extends Seeder
             [
                 'category_id' => 6 ,
                 'name' => 'Roof repair',
-                'description' => 'Whether due to severe storm damage or years of wear and tear, when you have a roofing problem that needs to be fixed now, Doctor Home will be at your home fast and will fix it right the first time. Our roof repair experts have been serving for over 10 years.',
+                'description' => 'Whether due to severe storm damage or years of wear and tear, when you have a roofing problem that needs to be fixed now, Doctor Home will be at your home fast and will fix it right the first time.',
                 'imgurl' => 'https://i.pinimg.com/736x/8e/f8/c0/8ef8c02c46316efc48ab65a97ae0c031.jpg'
             ]
         );
@@ -169,7 +169,7 @@ class ServiceSeeder extends Seeder
             [
                 'category_id' => 6 ,
                 'name' => 'Carbinet makeover',
-                'description' => 'We provide professional and precision installation to compliment our custom design and cabinet making services. Through the use of advanced technology, we are able to perfectly install your new cabinetry, even if your walls aren’t straight.',
+                'description' => 'We provide professional and precision installation to compliment our custom design and cabinet making services. Through the use of advanced technology, we are able to perfectly install your new cabinetry.',
                 'imgurl' => 'https://cdn.vox-cdn.com/thumbor/IJTMLyrwcUjbVvEr950M7vhWsYU=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19603926/Cabinetrs_1119_Idea_House_DSC_0402.0.jpg'
             ]
         );

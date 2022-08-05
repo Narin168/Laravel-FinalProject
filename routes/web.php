@@ -67,4 +67,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/checkout', function () {
+    return view('page.checkout');
+})->middleware(['auth'])->name('checkout');
+
 require __DIR__.'/auth.php';

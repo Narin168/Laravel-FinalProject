@@ -335,7 +335,7 @@ body {
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 					<div class="sec-heading text-center">
-						<h6>How it work</h6>
+						<h6>How it works</h6>
 					</div>
 				</div>
 			</div>
