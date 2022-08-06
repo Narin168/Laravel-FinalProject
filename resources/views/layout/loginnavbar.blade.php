@@ -1,3 +1,17 @@
+<style>
+    .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.navbar-nav li a:hover{
+    color: #0d6efd;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px #6ea8fe;
+}
+</style>
+
 <nav class=" sticky-top shadow py-3 bg-body navbar navbar-expand-lg " style="background-color: #2fafe5; padding-right:20px;">
         <div class="container-fluid" style="padding-right:20px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
