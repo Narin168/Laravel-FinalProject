@@ -121,6 +121,9 @@ class ServiceController extends Controller
         return view ('category.carpentry')->with('services', $services);
     }
     
-    
-    
+    public function checkout($id)
+    {
+        $service = Service::find($id);
+        return view('page.checkout', compact('service'));
+    }   
 }
