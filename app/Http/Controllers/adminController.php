@@ -9,6 +9,6 @@ class adminController extends Controller{
         if( strcmp( $status, "isAdmin")  === 0 ){
             return view('admin.admin');
         }
-        return view('page.home');
+        return redirect('/home');
     }
 }
