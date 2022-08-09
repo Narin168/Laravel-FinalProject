@@ -30,19 +30,22 @@
                     <p>&nbsp;</p>
                 </div>
 
-                <div class="d-flex">
-                    <h1>Our&nbsp;</h1>
-                    <h1 class="text-primary">Value</h1>
+                <div class="reveal">
+                    <div class="d-flex">
+                        <h1>Our&nbsp;</h1>
+                        <h1 class="text-primary">Value</h1>
+                    </div>
+                    <div class=" pt-3">
+                        <p class="fs-5 ">
+                            Our value lies in giving opportunities to small services bussinuss to run affectively and reliablity for the online market in Cambodia.
+                            Being able to provide a specialized foundation to creating business activities that previously would rely on traditional networks and connections would significantly increase the efficacy and opportunities for Clients to connect with one another.
+                            Providing quick and safe services for all customers, make it easy and no wasting time with the bad services.
+                            Respect our customer by keeping the privacy of the inside customer's house. Trustworthy stays with all our services.
+                        </p>
+                    </div>
                 </div>
-                <div class=" pt-3 ">
-                    <p class="fs-5 ">
-                        Our value lies in giving opportunities to small services bussinuss to run affectively and reliablity for the online market in Cambodia.
-                        Being able to provide a specialized foundation to creating business activities that previously would rely on traditional networks and connections would significantly increase the efficacy and opportunities for Clients to connect with one another.
-                        Providing quick and safe services for all customers, make it easy and no wasting time with the bad services.
-                        Respect our customer by keeping the privacy of the inside customer's house. Trustworthy stays with all our services.
-                    </p>
-                </div>
-                <div class="position-relative p-5 text-center w-75 mx-auto mb-5 px-6 shadow-lg rounded-5 my-5" >
+
+                <div class="reveal position-relative p-5 text-center w-75 mx-auto mb-5 px-6 shadow-lg rounded-5 my-5" >
                     <h2>Our Value</h2>
                     <div class="container text-center">
                         <div class="row row-cols-md-1 row-cols-lg-2">
@@ -84,19 +87,21 @@
 
                 </div>
 
-                <div class="d-flex">
-                    <h1>Vision and&nbsp;</h1>
-                    <h1 class="text-primary">Mission</h1>
-                </div>
-                <div class=" pt-3 ">
-                    <p class="fs-5 ">
-                        Our mission is to empower the digital platform in Cambodia by providing an accessible, secure and easy-to-use platform.
-                        To help people who need services and people who provide services take themselves seriously, we want to equib the technology
-                        platform between them.
-                    </p>
+                <div class="reveal">
+                    <div class="d-flex">
+                        <h1>Vision and&nbsp;</h1>
+                        <h1 class="text-primary">Mission</h1>
+                    </div>
+                    <div class=" pt-3">
+                        <p class="fs-5 ">
+                            Our mission is to empower the digital platform in Cambodia by providing an accessible, secure and easy-to-use platform.
+                            To help people who need services and people who provide services take themselves seriously, we want to equib the technology
+                            platform between them.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="position-relative p-5 text-center mx-2 mb-5 px-6 shadow-lg rounded-5 my-5" >
+                <div class=" reveal position-relative p-5 text-center mx-2 mb-5 px-6 shadow-lg rounded-5 my-5" >
                     <h2>Contact Us</h2>
                     <div class="text-start">
                         <h5>&nbsp;</h5>

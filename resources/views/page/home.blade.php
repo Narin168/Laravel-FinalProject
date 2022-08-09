@@ -4,7 +4,7 @@
 
 @section('content')
 <style>
-  
+
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
@@ -47,7 +47,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-	
+
 	.carousel-caption {
 		bottom: 165px;
 	}
@@ -58,7 +58,7 @@
 		padding: 10px 15px;
 		font-size: 15px;
 	}
-	
+
 }
 
 
@@ -232,7 +232,7 @@ body {
 	font-size: 25px;
 	color: #262626;
 	line-height: 1.5;
-    
+
 }
 .text-area .icon {
     margin-right: 5px;
@@ -244,7 +244,7 @@ body {
 	text-align: center;
 	margin-top: 20px;
 	font-size: 25px;
-	
+
 }
 .main-content .button-area {
 	display: grid;
@@ -261,7 +261,7 @@ body {
     border: none;
     outline: none;
     padding: 10px 15px;
-    
+
 }
 .button-area button:active {
     background-color: deepskyblue;
@@ -303,7 +303,7 @@ body {
 		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
 	</div>
 
-<div class="container">
+<div class="container reveal">
 		<h1 class="header">Our <span>Services</span></h1>
 		<div class="row">
 			<div class="col s12 m6 l4">
@@ -331,7 +331,7 @@ body {
 	</div>
 
 
-	<div class="container">
+	<div class="container reveal">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 					<div class="sec-heading text-center">
@@ -341,7 +341,7 @@ body {
 			</div>
 		</div>
 
-	<div class="container text-center">
+	<div class="container text-center reveal">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3">
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
@@ -380,7 +380,7 @@ body {
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 
 <section id="team">
-		<div class="container">
+		<div class="container reveal">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 					<div class="sec-heading text-center">
@@ -389,7 +389,7 @@ body {
 				</div>
 			</div>
 		</div>
-		<div class="testimonial-box">
+		<div class="testimonial-box reveal">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -415,7 +415,7 @@ body {
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
@@ -423,14 +423,14 @@ body {
 		</div>
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-	</script> 
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-	</script> 
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
-	</script> 
+	</script>
 	<script>
 	       $('.team-slider').owlCarousel({
-	           
+
 	           margin: 20,
 	           responsive: {
 	               0: {
@@ -452,28 +452,28 @@ body {
 	       });
 	</script>
 
-	<div class="containers">
-      
+	<div class="containers reveal">
+
       <div class="headers">
         <h2>Clients' Feedback</h2>
       </div>
-  
+
       <div class="main-content">
-       
+
         <div class="text-area">
           <span class="quote">"Life is what happens when you're busy making other plans"</span>
         </div>
-        
+
         <div class="writer">– John Lennon</div>
-  
-        <div class="button-area">  
+
+        <div class="button-area">
           <div class="btn">
             <button id="Qbtn">See More</button>
           </div>
         </div>
-        
+
       </div>
-  
+
     </div>
 <script>
 const quotes = [{
@@ -519,11 +519,11 @@ let quote = document.querySelector(".quote");
 let writer = document.querySelector(".writer");
 btn.addEventListener("click", function() {
     let random = Math.floor(Math.random() * quotes.length);
-    
-    
+
+
     quote.innerHTML = quotes[random].quote;
 
-    
+
     writer.innerHTML = quotes[random].writer;
 })
 

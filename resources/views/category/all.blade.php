@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="reveal container text-center">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3">
                             <div class="col px-3 py-3 " >
                                 <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
@@ -83,7 +83,7 @@
 
         </div>
     </div>
-    <div class="p-5 mt-md-5">
+    <div class="p-5 mt-md-5 reveal">
         <div class="d-flex">
             <h1>We do&nbsp;</h1>
             <h1 class="text-primary">it all</h1>
