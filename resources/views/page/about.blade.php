@@ -3,7 +3,7 @@
 @section('title', 'About')
 
 @section('content')
-    <div class="position-absolute top-0 start-0">
+    <div class="position-absolute top-0 start-0 d-none d-md-block">
           <img class="img-fluid w-50 rounded-1" src="https://images.pexels.com/photos/6969778/pexels-photo-6969778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="home">
     </div>
 
