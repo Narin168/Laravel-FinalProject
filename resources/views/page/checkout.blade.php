@@ -25,7 +25,7 @@
 
 body {
     padding: 5px;
-    background-color: #7a34ca;
+    background-color: #6ea8fe;
 }
 
 p {
@@ -34,7 +34,7 @@ p {
 
 .container {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
     overflow: hidden;
     background-color: #f8f9fa;
 }
@@ -344,7 +344,7 @@ input[type="radio"] {
                                     class="d-block w-100">
                             </div>
                             <div class="carousel-item">
-                             <img class="img-fluid" src="/images/doctorHome.jpg" alt="" 
+                             <img class="img-fluid" src="/images/doctorHome.jpg" alt=""
                                     class="d-block w-100 ">
                             </div>
                             <div class="carousel-item">
@@ -358,7 +358,7 @@ input[type="radio"] {
                             </div>
                             <span class="visually-hidden">Previous</span>
                         </button>
-    
+
                         <button class="carousel-control-next" type="button" data-bs-target="#my" data-bs-slide="next">
                             <div class="icon">
                                 <span class="fas fa-arrow-right"></span>
@@ -369,7 +369,7 @@ input[type="radio"] {
                     <h4 class="dis info my-3 fw-normal fs-6">
                         {{$service->description}}
                     </h4>
-                   
+
                 </div>
             </div>
             <div class="box-2">
@@ -395,7 +395,7 @@ input[type="radio"] {
                                     <input type="text" name="name" id="name" class="form-control px-0 invisible "  value=" {{$service->name}}">
                                     <input type="text" name="description" id="description" class="form-control px-0 invisible " value=" {{$service->description}}">
                                     <input type="text" name="imgurl" id="imgurl" class="form-control px-0 invisible " value=" {{$service->imgurl}}">
-                                 
+
                                 </div>
                             </div>
                             <div class="my-3 cardname">
@@ -419,7 +419,7 @@ input[type="radio"] {
                                     <div class="inputWithcheck">
                                         <input class="form-control" type="text" value="GB012345B9">
                                         <span class="fas fa-check"></span>
-    
+
                                     </div>
                                 </div> --}}
                                 <div class="d-flex flex-column dis">
@@ -435,10 +435,8 @@ input[type="radio"] {
                                         <p class="fw-bold">Total</p>
                                         <p class="fw-bold"><span class="fas fa-dollar-sign"></span>35.80</p>
                                     </div>
-            
-                                    <div  class="btn  btn-success mt-2">
-                                            <input class="btn  btn-success mt-2" type="submit" value="Book 4.99"> 
-                                    </div>
+
+                                            <input class="btn btn-info  mt-2 p-2" type="submit" value="Book 4.99">
                                 </div>
                             </div>
                         </div>
@@ -447,7 +445,7 @@ input[type="radio"] {
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>
 

@@ -22,12 +22,12 @@
 <p class="invisible">{{$num = count($histories)}}</p>
 <div>
     <div class="d-flex p-4">
-        <div class="p-4" style="width: 65%;">
+        <div class="p-4" style="">
             <h4>You have booked {{$num}} of our services so far </h4>
-            
-           
-            <div class="container text-center">
-                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+
+
+            <div class="container text-center justify-content-center">
+                <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
                 <!-- loop the card -->
                 @include('service.history')
@@ -36,7 +36,7 @@
 
             </div>
         </div>
-        
+
     </div>
 </div>
 

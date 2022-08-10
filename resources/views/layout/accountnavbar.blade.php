@@ -37,10 +37,10 @@
                         <a class="navbar-brand" href="{{ url('/history', ['user_id' => Auth::user()->id]) }}">History</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2 border border-primary rounded-3" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary rounded-3" type="submit"  >Search</button>
-                </form>
+                </form> -->
                 <!-- <div class="btn-group mx-2">
                     <a href="" class="btn btn-outline-primary pe-none" >{{Auth::user()->name}}</a>
                     <a href="{{ url('/logout') }}" class="btn btn-primary">Log Out</a>

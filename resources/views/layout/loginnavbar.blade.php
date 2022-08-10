@@ -36,10 +36,10 @@
                     <!-- <a class="navbar-brand" href="{{ url('/history') }}">History</a> -->
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2 border border-primary rounded-3" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary rounded-3" type="submit"  >Search</button>
-                </form>
+                </form> -->
             <!-- <button type="button" class=" mx-2 btn btn-primary">Login</button> -->
                 <div class="btn-group mx-2">
                     <a href="{{ route('login') }}" class="btn btn-primary " >Log in</a>
