@@ -70,22 +70,22 @@ class ServiceSeeder extends Seeder
                 'category_id' => 4 ,
                 'name' => 'Stucco',
                 'description' => 'Most common problems with stucco siding is water damage. Apart from the fact that painting your stucco makes it look better, paint also helps protect the stucco from rain, pollution, and mold.',
-                'imgurl' => 'https://lirp.cdn-website.com/cfa09b54/dms3rep/multi/opt/Stucco+painting-640w.jpg'
+                'imgurl' => 'https://resin-expert.com/wp-content/uploads/2021/08/The-Best-Exterior-Paint-for-Stucco.jpg'
             ]
         );
         DB::table('services')->insert(
             [
                 'category_id' => 4 ,
                 'name' => 'Brick & Cinder block',
-                'description' => 'Since our brick stain sinks deep into the pores of your brick, we’ll perform a water test to evaluate the porosity and permeability of your brick. This way, we make sure you get permanent results, guaranteed.',
-                'imgurl' => 'https://www.allweathercoating.co.uk/wp-content/uploads/2022/01/painting-interior-brick-wall.jpg'
+                'description' => 'Since our brick stain sinks deep into the pores of your brick, we’ll perform a water test to evaluate the porosity and permeability of your brick. We make sure you get permanent results, guaranteed.',
+                'imgurl' => 'https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2013/11/how-to-paint-brick.jpg'
             ]
         );
         DB::table('services')->insert(
             [
                 'category_id' => 4 ,
                 'name' => 'Wood',
-                'description' => 'We have a proffessional step to keep the wood healthy. Step 1 : Sanding Wooden surfaces need to be sanded first, then apply stain on the surface and last step is polishing by either manually or using a machine.',
+                'description' => 'We have a proffessional step to keep the wood healthy. Step 1 : Sanding Wooden surfaces need to be sanded first, then apply stain on the surface and last step is polishing manually or using a machine.',
                 'imgurl' => 'https://woodimprove.com/wp-content/uploads/2018/10/best-paints-for-wood-reviews1.jpg'
             ]
         );
@@ -96,7 +96,7 @@ class ServiceSeeder extends Seeder
                 'category_id' => 5 ,
                 'name' => 'Modeling',
                 'description' => 'We have successfully completed several interactive floor plans for private owners of small/sprawling properties, property managers, leasing agents, real estate developers and architects.',
-                'imgurl' => 'https://shawfloors.widen.net/content/k9sikquwd8/jpeg/SW661_01079_room.jpeg?q=60&crop=trueNaN'
+                'imgurl' => 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             ]
         );
         DB::table('services')->insert(
@@ -104,14 +104,14 @@ class ServiceSeeder extends Seeder
                 'category_id' => 5 ,
                 'name' => 'Dent floor',
                 'description' => 'Dent floor looks like a little trouble but it can be beyond repair and cause much money. Doctor Home will provide a cheap and fast service for you.',
-                'imgurl' => 'https://rollmehome.com/wp-content/uploads/2019/02/prefinished-hardwood-floor.jpg'
+                'imgurl' => 'https://www.diychatroom.com/attachments/floor1-jpg.463170/'
             ]
         );
         DB::table('services')->insert(
             [
                 'category_id' => 5 ,
                 'name' => 'Water Damage',
-                'description' => 'The problem will almost always require refinishing and the replacement of some or all of the damaged wood. Fortunatley, we offer observations on how to spot, prevent and minimize the damage that water can cause to your hardwood floors.',
+                'description' => 'The problem will almost always require refinishing and the replacement of some or all of the damaged wood. We offer observations on preventing and minimizing the damage that water can cause to your hardwood floors.',
                 'imgurl' => 'https://orange-restoration.com/wp-content/uploads/2017/11/wood-floor-water-damage.jpg'
             ]
         );
@@ -119,7 +119,7 @@ class ServiceSeeder extends Seeder
             [
                 'category_id' => 5 ,
                 'name' => 'Broken tile',
-                'description' => 'Unlike most, we are not just glorified tile cleaners. Doctor Home workers are fully trained in all aspects of tile repair & replacements. If it can be done Doctor Home can do it. All fully guaranteed. No spare tiles, don\'t worry we can be pretty creative.',
+                'description' => 'Unlike most, we are not just glorified tile cleaners. Doctor Home workers are fully trained in all aspects of tile repair & replacements. If it can be done Doctor Home can do it. All fully guaranteed. No spare tiles.',
                 'imgurl' => 'https://media.homeanddecor.com.sg/public/2018/02/83089-tilespop1.jpg'
             ]
         );
@@ -137,7 +137,7 @@ class ServiceSeeder extends Seeder
             [
                 'category_id' => 6 ,
                 'name' => 'Custom Cabinets',
-                'description' => 'We have experience with all types of residential cabinetry projects. When it comes to your custom project, we provide a personal touch not often experienced with the big-box cabinet builders. Our approach is fully centered on your needs.',
+                'description' => 'We have experience with all types of residential cabinetry projects. When it comes to your custom project, we provide a personal touch not often experienced with the big-box cabinet builders.',
                 'imgurl' => 'https://www.cabinetmakernyc.com/wp-content/uploads/2021/10/CABINET-MAKER-NYC-KITCHEN-CABINET-scaled.jpg'
             ]
         );
@@ -146,7 +146,7 @@ class ServiceSeeder extends Seeder
                 'category_id' => 6 ,
                 'name' => 'Shelving & Bookcases',
                 'description' => 'If you are currently considering increasing the storage in your home with custom shelves or bookcases, you should not hesitate to contact your Doctor Home! Let our team do the heavy lifting on your behalf.',
-                'imgurl' => 'https://cf.shopee.ph/file/4b58ba074b80f719f908c29e63d349ae'
+                'imgurl' => 'https://www.foxwoodco.com.au/content/uploads/2021/04/0V6A2399.jpg'
             ]
         );
         DB::table('services')->insert(
@@ -162,7 +162,7 @@ class ServiceSeeder extends Seeder
                 'category_id' => 6 ,
                 'name' => 'Kitchen Carbinet',
                 'description' => 'The Home Doctor\'s kitchen cabinet installers are local, licensed, insured, and undergo a thorough background-screening process. We offer a wide range of affordable financing options.',
-                'imgurl' => 'https://blog.architizer.com/wp-content/uploads/Plywood-kitchen-cabinetry-pros-and-cons-KBR-1024x533-1.jpg'
+                'imgurl' => 'https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             ]
         );
         DB::table('services')->insert(
