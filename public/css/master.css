@@ -1,0 +1,19 @@
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0.2;
+    transition: all 0.8s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media (max-width: 767px){
+
+    div .serviceBX
+    {
+        padding: 5px;
+        width: 100%;
+    }
+}
