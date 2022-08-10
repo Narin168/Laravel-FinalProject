@@ -67,7 +67,7 @@ body{
 
 .header {
 	margin-top: 50px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: system-ui, -apple-system;
 	text-align: center;
 	font-size: 50px;
 	margin-bottom: 50px;
@@ -99,12 +99,12 @@ body{
 
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family:system-ui, -apple-system;
 	margin-top: 20px;
 }
 
 .sec-heading h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: system-ui, -apple-system;
 	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -177,7 +177,7 @@ body {
 	-webkit-animation: move-animation 2s ease-in-out infinite;
 	animation: move-animation 2s ease-in-out infinite;
 }
-@-webkit-keyframes move-animation {
+ @-webkit-keyframes move-animation { 
 	0% {
 		top: 3px;
 	}
@@ -187,7 +187,7 @@ body {
 	100% {
 		top: 3px;
 	}
-}
+} 
 
 
 
@@ -196,7 +196,7 @@ body {
 
 .containers {
 	margin-top: 50px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: system-ui, -apple-system;
 	text-align: center;
 	font-size: 50px;
 	margin-bottom: 50px;
@@ -205,7 +205,7 @@ body {
 }
 .headers {
 	margin-top: 50px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: system-ui, -apple-system;
 	text-align: center;
 	font-size: 50px;
 	margin-bottom: 50px;
@@ -213,7 +213,7 @@ body {
 	font-weight: 700;
 }
 .headers h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui, -apple-system;
 	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -377,9 +377,9 @@ body {
 	</div>
 
 
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"> -->
-	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">  -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
 
 <section id="team">
@@ -398,24 +398,24 @@ body {
 					<div class="col-lg-12">
 						<div class="team-slider owl-carousel">
 							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="/images/narin.jpg"></div>
 								<div class="info-area">
 									<h4>Um Narin</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+									<p>Web Developer</p>
 								</div>
 							</div>
 							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="/images/rathanak.jpg"></div>
 								<div class="info-area">
 									<h4>Than Rathanak</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+									<p>Web Developer</p>
 								</div>
 							</div>
 							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="/images/molika.jpg"></div>
 								<div class="info-area">
 									<h4>Taing Molika</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+									<p>Web Developer</p>
 								</div>
 							</div>
 
