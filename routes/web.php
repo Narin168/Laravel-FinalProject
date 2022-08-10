@@ -3,6 +3,7 @@
 use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\HistoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,5 +71,11 @@ Route::get('/dashboard', function () {
 Route::get('/checkout/{id}',[ServiceController::class,'checkout'], function () {
     return view('page.checkout');
 })->middleware(['auth'])->name('checkout');
+
+Route::get('/history/{user_id}', [HistoryController::class, 'show'],function(){
+    return view('page.history');
+});
+
+Route::resource('histories', HistoryController::class);
 
 require __DIR__.'/auth.php';

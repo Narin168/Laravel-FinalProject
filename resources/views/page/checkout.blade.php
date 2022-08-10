@@ -326,7 +326,7 @@ input[type="radio"] {
         <div class="container d-lg-flex">
             <div class="box-1 bg-light user">
                 <div class="box-inner-1 pb-3 mb-3 ">
-                    <div class="d-flex justify-content-between mb-3 userdetails pt-5 fs-3">
+                    <div class="d-flex justify-content-between mb-3 userdetails pt-5 fs-5">
                         <p class="fw-bold">{{$service->name}}</p>
                         <p class="fw-lighter"><span class="fas fa-dollar-sign"></span> 4.99</p>
                     </div>
@@ -378,10 +378,11 @@ input[type="radio"] {
                         <p class="fw-bold">Payment Details</p>
                         <p class="dis mb-3">Complete your purchase by providing your payment details</p>
                     </div>
-                    <form action="">
+                    <form action="{{ route('histories.store') }}" method="post">
+                        {!! csrf_field() !!}
                         <div class="mb-3">
-                            <p class="dis fw-bold mb-2">Email address</p>
-                            <input class="form-control" type="email" value="luke@skywalker.com">
+                            <p class="dis fw-bold mb-2">Phone Number</p>
+                            <input class="form-control" type="text" name="phonenumber" id="phonenumber" >
                         </div>
                         <div>
                             <p class="dis fw-bold mb-2">Card details</p>
@@ -389,8 +390,12 @@ input[type="radio"] {
                                 <div class="fab fa-cc-visa ps-3"></div>
                                 <input type="text" class="form-control" placeholder="Card Details">
                                 <div class="d-flex w-50">
-                                    <input type="text" class="form-control px-0" placeholder="MM/YY">
-                                    <input type="password" maxlength=3 class="form-control px-0" placeholder="CVV">
+                                    <input type="text" name="user_id" id="user_id" class="form-control px-0 invisible "  value=" {{Auth::user()->id}}">
+                                    <input type="text" name="service_id" id="service_id" class="form-control px-0 invisible " value=" {{$service->id}}">
+                                    <input type="text" name="name" id="name" class="form-control px-0 invisible "  value=" {{$service->name}}">
+                                    <input type="text" name="description" id="description" class="form-control px-0 invisible " value=" {{$service->description}}">
+                                    <input type="text" name="imgurl" id="imgurl" class="form-control px-0 invisible " value=" {{$service->imgurl}}">
+                                 
                                 </div>
                             </div>
                             <div class="my-3 cardname">
@@ -398,7 +403,7 @@ input[type="radio"] {
                                 <input class="form-control" type="text">
                             </div>
                             <div class="address">
-                                <p class="dis fw-bold mb-3">Billing address</p>
+                                {{-- <p class="dis fw-bold mb-3">Billing address</p>
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected hidden>United States</option>
                                     <option value="1">India</option>
@@ -416,7 +421,7 @@ input[type="radio"] {
                                         <span class="fas fa-check"></span>
     
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="d-flex flex-column dis">
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <p>Subtotal</p>
@@ -430,7 +435,9 @@ input[type="radio"] {
                                         <p class="fw-bold">Total</p>
                                         <p class="fw-bold"><span class="fas fa-dollar-sign"></span>35.80</p>
                                     </div>
-                                    <div class="btn btn-primary mt-2">Pay<span class="fas fa-dollar-sign px-1"></span>35.80
+            
+                                    <div  class="btn  btn-success mt-2">
+                                            <input class="btn  btn-success mt-2" type="submit" value="Book 4.99"> 
                                     </div>
                                 </div>
                             </div>

@@ -31,9 +31,10 @@
 
                     <!-- Category -->
                     @include('layout.category')
+                {{-- {{$user_id = Auth::user()->id }} --}}
 
                     <li class="nav-item mx-3">
-                        <a class="navbar-brand" href="{{ url('/history') }}">History</a>
+                        <a class="navbar-brand" href="{{ url('/history', ['user_id' => Auth::user()->id]) }}">History</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
