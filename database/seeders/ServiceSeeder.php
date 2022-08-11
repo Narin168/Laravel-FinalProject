@@ -20,7 +20,7 @@ class ServiceSeeder extends Seeder
                 'category_id' => 1 ,
                 'name' => 'Wire Planning',
                 'description' => 'Plan layouts for electrical wiring for new buildings (including positioning electrical outlets, lighting fixtures, heating outlets, and ventilation systems)',
-                'imgurl' => 'https://thumbs.dreamstime.com/z/electrician-tools-electrical-equipment-wiring-diagram-electrician-tools-electrical-equipment-wiring-diagram-205201199.jpg'
+                'imgurl' => 'https://as1.ftcdn.net/v2/jpg/01/94/28/76/1000_F_194287658_mYyqkK3FAZcoBCqVfUTskqaCILiQN710.jpg'
             ]
         );
         DB::table('services')->insert(
@@ -44,9 +44,94 @@ class ServiceSeeder extends Seeder
                 'category_id' => 1 ,
                 'name' => 'Household Appliances',
                 'description' => 'Installing, maintaining, and repairing electrical household appliances ranging from air conditioner, refrigerator, washing machine, etc.',
-                'imgurl' => 'https://thumbs.dreamstime.com/b/plumber-fixing-domestic-washing-machine-85205385.jpgs'
+                'imgurl' => 'https://insights.workwave.com/wp-content/uploads/2020/12/choosing-the-right-tool-plumber-repairing-washing-machine-picture-id1170038003.jpg'
             ]
         );
+
+        //plumbing 2
+        DB::table('services')->insert(
+            [
+                'category_id' => 2 ,
+                'name' => 'Water Heater System',
+                'description' => 'Provide heater installation and repair especially in the cold weather is taking over.',
+                'imgurl' => 'https://www.sunsetplumbingofbend.com/wp-content/uploads/2019/10/sunset-plumbing-electric-water-heater-400x265.jpg'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 2 ,
+                'name' => 'Repair of Leakages',
+                'description' => 'Leaks are a very common problem. We have many years of experience in leaking or broken pipes issues.',
+                'imgurl' => 'https://caitcocares.com/wp-content/uploads/2017/07/caitco3-1.png'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 2 ,
+                'name' => 'Toilet',
+                'description' => 'Using a high powered water jet in order to clean all clogged pipes and repair it basically.',
+                'imgurl' => 'https://images.pexels.com/photos/4239088/pexels-photo-4239088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 2 ,
+                'name' => 'Garbage disposals',
+                'description' => 'Install new ones or perhaps repair the spotted damaged areas over existing disposal.',
+                'imgurl' => 'https://www.rootermancan.com/wp-content/uploads/2022/02/garbage-disposal-food.jpg'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 2 ,
+                'name' => 'Drain',
+                'description' => 'Getting the draining system entirely cleaned, letting the water flow properly.',
+                'imgurl' => 'https://media.istockphoto.com/photos/water-draining-at-sink-background-water-flowing-drain-in-washbasin-picture-id1164659799?k=20&m=1164659799&s=612x612&w=0&h=AkXJ0EECmL-38X5N18s8feb-KE6ltZtx9wYJUNzDnow='
+            ]
+        );
+
+        //cleaning 3
+        DB::table('services')->insert(
+            [
+                'category_id' => 3 ,
+                'name' => 'Bedroom',
+                'description' => 'Clean bed, pillow and the whole room with the high technology machine. No wasting time.',
+                'imgurl' => 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 3 ,
+                'name' => 'Garbage',
+                'description' => 'Gather, take out every kind of garbage. We make sure the space are clean after the garbage take out.',
+                'imgurl' => 'https://images.pexels.com/photos/2264665/pexels-photo-2264665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 3 ,
+                'name' => 'Commercial Cleaning',
+                'description' => 'Office cleaning, perform cleaning services for commercial buildings such as office spaces, schools, community buildings, and more.',
+                'imgurl' => 'https://www.flyingcolour.net/wp-content/uploads/2021/05/The-Perfect-Time-to-Start-Your-Building-Cleaning-Service-Business-is-Now.jpg'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 3 ,
+                'name' => 'Pressure washing',
+                'description' => 'Using a powerful stream of water to clean dirt-ridden carpets, moldy buildings, loose paints on walls, etc.',
+                'imgurl' => 'https://www.halorestorationservices.com/wp-content/uploads/2019/08/pressure-washing-pavestone.jpg'
+            ]
+        );
+        DB::table('services')->insert(
+            [
+                'category_id' => 3 ,
+                'name' => 'Sanitization and Disinfection',
+                'description' => 'Sanitization and disinfection use physical and chemical means to ensure that our dwellings and office spaces are safe for human inhabitation and cut the COVID chain.',
+                'imgurl' => 'https://images.pexels.com/photos/4099267/pexels-photo-4099267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            ]
+        );
+
 
         // painting 4
         DB::table('services')->insert(
