@@ -34,6 +34,10 @@ Route::get('/admin', function () {
 Route::get('/all', function () {
     return view('category.all');
 });
+
+Route::get('/dashboard',[HistoryController::class,'data'], function () {
+    return view('adminpage.admin');
+});
 // Route::get('/carpentry', function () {
 //     return view('category.carpentry');
 // });
@@ -52,9 +56,9 @@ Route::get('/all', function () {
 // Route::get('/plumbing', function () {
 //     return view('category.plumbing');
 // });
-Route::get('/admin', [adminController::class, 'index'])->middleware(['auth'])->name('admin');
+// Route::get('/admin', [adminController::class, 'index'])->middleware(['auth'])->name('admin');
 
-
+Route::resource("/admin", ServiceController::class);
 
 Route::get('/electrical', [ServiceController::class, 'electrical']);
 Route::get('/plumbing', [ServiceController::class, 'plumbing']);
@@ -64,9 +68,9 @@ Route::get('/flooring', [ServiceController::class, 'flooring']);
 Route::get('/carpentry', [ServiceController::class, 'carpentry']);
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 Route::get('/checkout/{id}',[ServiceController::class,'checkout'], function () {
     return view('page.checkout');
@@ -77,5 +81,7 @@ Route::get('/history/{user_id}', [HistoryController::class, 'show'],function(){
 });
 
 Route::resource('histories', HistoryController::class);
+
+
 
 require __DIR__.'/auth.php';

@@ -60,7 +60,7 @@
                     </div>
                 </div>
                     @if( strcmp(Auth::user()->status, "isAdmin")  === 0)
-                        <a href="{{ route('admin') }}" class=" mx-1 btn btn-sm btn-outline-primary">CRUD</a>
+                        <a href="{{ url('/admin') }}" class=" mx-1 btn btn-sm btn-outline-primary">Admin Panel</a>
                         <!-- <button class=" mx-1 btn btn-sm btn-outline-primary" type="button">CRUD</button> -->
                     @endif
         </div>
