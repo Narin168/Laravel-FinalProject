@@ -16,7 +16,7 @@ class ServiceController extends Controller
     {
         //    
         $services = Service::all();
-        return view ('category.carpentry')->with('services', $services);
+        return view ('adminpage.index')->with('services', $services);
     }
     
 
@@ -29,6 +29,7 @@ class ServiceController extends Controller
     public function create()
     {
         //
+        return view('adminpage.create');
     }
 
     /**
@@ -40,6 +41,9 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
         //
+        $input = $request->all();
+        Service::create($input);
+        return redirect('admin')->with('flash_message', 'Service Addedd!');
     }
 
     /**
@@ -51,6 +55,8 @@ class ServiceController extends Controller
     public function show($id)
     {
         //
+        $services = Service::find($id);
+        return view('adminpage.show')->with('services', $services);
     }
 
     /**
@@ -62,6 +68,8 @@ class ServiceController extends Controller
     public function edit($id)
     {
         //
+        $services = Service::find($id);
+        return view('adminpage.edit')->with('services', $services);
     }
 
     /**
@@ -74,6 +82,10 @@ class ServiceController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $services = Service::find($id);
+        $input = $request->all();
+        $services->update($input);
+        return redirect('admin')->with('flash_message', 'Service Updated!');  
     }
 
     /**
@@ -85,6 +97,8 @@ class ServiceController extends Controller
     public function destroy($id)
     {
         //
+        Service::destroy($id);
+        return redirect('admin')->with('flash_message', 'Service deleted!');  
     }
 
     public function electrical()

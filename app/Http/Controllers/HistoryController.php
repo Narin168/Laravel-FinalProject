@@ -3,11 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\History;
+use App\Models\Service;
 use Illuminate\Http\Request;
+
 
 class HistoryController extends Controller
 {
     //
+    public function index()
+    {
+        //    
+        $histories = History::all();
+        return view ('adminpage.admin')->with('histories', $histories);
+    }
     public function create()
     {
         return view('page.checkout');
@@ -31,5 +39,14 @@ class HistoryController extends Controller
         $histories = History::where('user_id',$user_id)->get();
         return view('page.history')->with('histories', $histories);
     }   
+
+    public function data()
+    {
+        $services = Service::all();
+        $histories   = History::all();
+
+        return view('adminpage.admin', compact('services', 'histories'));
+    }
+
     
 }
