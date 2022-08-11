@@ -111,8 +111,8 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: calc(100% - 300px);
-    padding: 0 40px;
+    width: calc(100% - 310px);
+    padding: 0 50px;
     overflow-y: scroll;
     transition: .3s;
 
@@ -121,6 +121,10 @@
 }
 </style>
 {{-- @include('adminlayout.style') --}}
+<p class="invisible">{{$num1 = count($users)}}</p>
+<p class="invisible">{{$num2 = count($categories)}}</p>
+<p class="invisible">{{$num3 = count($services)}}</p>
+<p class="invisible">{{$num4 = count($histories)}}</p>
 <section class="main">   
     <div class="main--content">
         <div class="overview">
@@ -128,64 +132,112 @@
                 <h2 class="section--title">Overview</h2>
                 
             </div>
+            <br>
             <div class="cards">
                 <div class="card card-1">
                     <div class="card--data">
                         <div class="card--content">
-                            <h5 class="card--title">Total Doctors</h5>
-                            <h1>152</h1>
+                            <h5 class="card--title">Total Users</h5>
+                            <h1>{{$num1}}</h1>
                         </div>
                         <i class="ri-user-2-line card--icon--lg"></i>
                     </div>
-                    <div class="card--stats">
-                        <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span>
-                        <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>10</span>
-                        <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span>
-                    </div>
+            
                 </div>
                 <div class="card card-2">
                     <div class="card--data">
                         <div class="card--content">
-                            <h5 class="card--title">Total Patients</h5>
-                            <h1>1145</h1>
+                            <h5 class="card--title">Total  Categories</h5>
+                            <h1>{{$num2}}</h1>
                         </div>
                         <i class="ri-user-line card--icon--lg"></i>
                     </div>
-                    <div class="card--stats">
-                        <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span>
-                        <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>230</span>
-                        <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>45</span>
-                    </div>
+                  
                 </div>
                 <div class="card card-3">
                     <div class="card--data">
                         <div class="card--content">
-                            <h5 class="card--title">Schedule</h5>
-                            <h1>102</h1>
+                            <h5 class="card--title">Total Services</h5>
+                            <h1>{{$num3}}</h1>
                         </div>
                         <i class="ri-calendar-2-line card--icon--lg"></i>
                     </div>
-                    <div class="card--stats">
-                        <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span>
-                        <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>31</span>
-                        <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>23</span>
-                    </div>
+                    
                 </div>
                 <div class="card card-4">
                     <div class="card--data">
                         <div class="card--content">
-                            <h5 class="card--title">Beds Available</h5>
-                            <h1>15</h1>
+                            <h5 class="card--title">Total Records</h5>
+                            <h1>{{$num4}}</h1>
                         </div>
                         <i class="ri-hotel-bed-line card--icon--lg"></i>
                     </div>
-                    <div class="card--stats">
-                        <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>8%</span>
-                        <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>11</span>
-                        <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span>
-                    </div>
                 </div>
             </div>
+            <br><br>
+            <div class="title">
+                <h2 class="section--title">Categories</h2>
+                
+            </div>
+            <br>
+            <div class=" container text-center">
+                <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3">
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-plug-circle-bolt fs-1"></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Electrical</h5></a>
+                                                <p>Qualified electricians at your service!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-faucet-drip fs-1"></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Plumbing</h5></a>
+                                                <p>Quality plumbing services for your house.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-broom fs-1"></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Cleaning</h5></a>
+                                                <p>Stay clean and healthy no worry about dust or bacteria.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-paint-roller fs-1"></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Painting</h5></a>
+                                                <p>Big job or small job - all painting is done by us on the same perfect quality level.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-ruler-combined fs-1"></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Flooring</h5></a>
+                                                <p>Residential and Commercial Floor Installation Repair and Maintenance.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-3 py-3 " >
+                                        <div class="card border-0 p-3 d-flex" style="--bs-bg-opacity: 0.6">
+                                            <a href="" class="text-decoration-none"><i class="fa-solid fa-hammer fs-1"></i></i></a>
+                                            <div class="card-body">
+                                                <a href="" class="text-decoration-none"><h5 class="card-title hover:text-primary">Carpentry & Cabinets</h5></a>
+                                                <p>Qualified carpenters at your service!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                </div>
         </div>
      
         

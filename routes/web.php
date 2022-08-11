@@ -38,6 +38,9 @@ Route::get('/all', function () {
 Route::get('/dashboard',[HistoryController::class,'data'], function () {
     return view('adminpage.admin');
 });
+Route::get('/record',[HistoryController::class,'record'], function () {
+    return view('adminpage.record');
+});
 // Route::get('/carpentry', function () {
 //     return view('category.carpentry');
 // });

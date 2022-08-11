@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\History;
 use App\Models\Service;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 
@@ -44,8 +46,16 @@ class HistoryController extends Controller
     {
         $services = Service::all();
         $histories   = History::all();
+        $users = User::all();
+        $categories   = Category::all();
 
-        return view('adminpage.admin', compact('services', 'histories'));
+        return view('adminpage.admin', compact('services', 'histories','users','categories'));
+    }
+    public function record()
+    {
+        //    
+        $histories = History::all();
+        return view ('adminpage.record')->with('histories', $histories);
     }
 
     

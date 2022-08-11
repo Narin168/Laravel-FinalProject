@@ -54,25 +54,26 @@ a {
                 <span class="sidebar--item\ ">Dashboard</span>
             </a>
         </li>
-        <li>
-            <a href="" >
-                <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
-                <span class="sidebar--item">Records</span>
-            </a>
-        </li>
+    
         <li>
             <a href="{{ url('/admin') }}">
                 <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
                 <span class="sidebar--item" style="white-space: nowrap;">Services</span>
             </a>
         </li>
+        <li>
+            <a href="{{ url('/record') }}" >
+                <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
+                <span class="sidebar--item">Records</span>
+            </a>
+        </li>
         
     </ul>
     <ul class="sidebar--bottom-items">
         <li>
-            <a href="#">
+            <a href="{{ url('/home') }}">
                 <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
-                <span class="sidebar--item">Logout</span>
+                <span class="sidebar--item btn btn-outline-danger">Back</span>
             </a>
         </li>
     </ul>
