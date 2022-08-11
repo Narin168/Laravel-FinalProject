@@ -39,7 +39,7 @@
               <input type="text" name="description" id="description"value="{{$services->description}}" class="form-control">
               <br>
               <label>Image URL</label>
-              <input type="text" name="imgurl" id="imgurl"value="{{$services->imgurl}}" class="form-control">
+              <input type="text" name="imgurl" id="imgurl"value="{{$services->imgurl}}" class="form-control"><br>
               <input type="submit" value="Save" class="btn btn-success">
           </form>
         
